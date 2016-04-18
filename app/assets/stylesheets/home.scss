@@ -1,3 +1,146 @@
 // Place all the styles related to the Home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+//************************//
+// HEADER                 //
+//************************//
+body{
+    background-color: #FF724E;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px 70px;
+}
+.navigation-menu{
+    min-height: 80px;
+    margin: 70px 0px 35px 0px;
+    background-color: #FEFEFE;
+    color:black;
+    font-size: 1rem;
+    padding-left: 35px;
+    
+    h1{
+        font-size: 1rem;
+        font-weight: bold;
+        margin-right: 35px;
+        padding: 30px 0;
+        float: left;
+    }
+    
+    .navigation-list{
+        line-height: 1;
+        padding-top: 36px;
+        margin-left: 0;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .navigation-link{
+        margin: 0 10px;
+        display: inline-block;
+        :hover{
+            border-bottom: 2px solid black;
+            font-weight: bold;
+        }
+        a{
+            color: black;
+            font-size: .8em;
+        }
+    }
+    .search-box{
+        border: 0px;
+        margin-top: 1.3em;
+        line-height: 1;
+    }
+    .menu-icon{
+        display: none;
+    }
+    form{
+        display: inline-block;
+        vertical-align: top;
+    }
+    .search-container{
+        display: inline-block;
+        vertical-align: top;
+        float: right;
+        height: 100%;
+    }
+}
+
+
+@media(max-width:850px){
+    .divider{
+        display: none
+    }
+    .navigation-menu{
+        position: relative;
+        
+        h1{
+            width: 90%;
+        }
+
+        .navigation-list{ 
+            margin-top: 1em;
+            display: none;
+            .navigation-link{
+                display:block;
+                height: 2em;
+            }
+        }  
+        form{
+            padding: 30px 0;
+            display: none;
+        }
+        
+        .menu-icon{
+            display: inline-block;
+            position: absolute;
+            top: 2em;
+            right: 2em;
+        }
+    }
+    
+}
+
+@media(max-width:600px){
+    body{
+        margin: 0;
+    }
+}
+
+//********************//
+//CENTRO              //
+//********************//
+.main-call{
+    height: 500px;
+    background-image: url("hero_banner.jpg");
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-color: #FFF;
+    color: #494949;
+    h3{
+        font-size: 1.5rem;
+        margin-top: 30px;
+        font-weight: bold;
+    }
+    p{
+        font-size: .9em;
+        line-height: 2;
+    }
+}
+.call{
+    max-width: 600px;
+    padding: 40px 35px;
+}
+
+
+.container-with-shadow{
+   box-shadow:  0 10px 20px rgba(0,0,0,.19) , 0 3px 3px rgba(0,0,0,.23);
+}
+
+.divider{
+    background-color: #B7B7B7;
+    width: 1px;
+    margin: 1em 0;
+    display: inline-block;
+    height: 60%;
+}
+
